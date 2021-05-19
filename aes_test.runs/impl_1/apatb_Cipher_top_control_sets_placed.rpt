@@ -1,0 +1,282 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sat Feb 15 16:05:48 2020
+| Host         : DESKTOP-10JQM4P running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file apatb_Cipher_top_control_sets_placed.rpt
+| Design       : apatb_Cipher_top
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   204 |
+|    Minimum number of control sets                        |   204 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    46 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   204 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     6 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |   188 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     9 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             166 |           76 |
+| No           | No                    | Yes                    |              20 |           14 |
+| No           | Yes                   | No                     |             117 |           36 |
+| Yes          | No                    | No                     |            1572 |          537 |
+| Yes          | No                    | Yes                    |               8 |            4 |
+| Yes          | Yes                   | No                     |              87 |           25 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+------------------------------------------------------------------+-----------------------------------------------------+------------------+----------------+
+|       Clock Signal      |                           Enable Signal                          |                   Set/Reset Signal                  | Slice Load Count | Bel Load Count |
++-------------------------+------------------------------------------------------------------+-----------------------------------------------------+------------------+----------------+
+|  CLK100M_IBUF_BUFG      | u_uart_wrapper/u_uart/uart_clk_en                                | u_uart_wrapper/u_uart/uart_rx_i/rx_ticks[3]_i_1_n_1 |                1 |              4 |
+|  CLK100M_IBUF_BUFG      | u_uart_wrapper/u_uart/uart_clk_en                                | u_uart_wrapper/u_uart/uart_tx_i/tx_ticks[3]_i_1_n_1 |                1 |              4 |
+|  u_SevenSeg_Top/slowCLK |                                                                  | u_SevenSeg_Top/clear                                |                2 |              4 |
+|  CLK100M_IBUF_BUFG      | AESL_inst_Cipher/grp_AddRoundKey_fu_179/state_addr_reg_2220      |                                                     |                1 |              4 |
+|  CLK100M_IBUF_BUFG      | AESL_inst_Cipher/grp_InvSubBytes_fu_190/state_addr_reg_1450      |                                                     |                1 |              4 |
+|  CLK100M_IBUF_BUFG      | AESL_inst_Cipher/grp_InvMixColumns_fu_173/ap_CS_fsm_reg[19]_0[0] | AESL_inst_Cipher/grp_AddRoundKey_fu_179/SR[0]       |                1 |              4 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[6][7]_i_1__0_n_1            |                                                     |                5 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[169][7]_i_1_n_1             |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[134][7]_i_1_n_1             |                                                     |                5 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[160][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[14][7]_i_1__0_n_1           |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | AESL_inst_Cipher/grp_InvMixColumns_fu_173/E[0]                   | u_control_unit/mem_inst_state/SR[0]                 |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | AESL_inst_Cipher/grp_InvMixColumns_fu_173/state_d_reg[1][0]      | u_control_unit/mem_inst_state/SR[0]                 |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | AESL_inst_Cipher/grp_AddRoundKey_fu_179/ap_CS_fsm_reg[1]_0[0]    | u_control_unit/mem_inst_state/SR[0]                 |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/sel                                               | u_control_unit/uart_rx_d[0][7]_i_1_n_1              |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/tx_counter[7]_i_1_n_1                             | u_control_unit/mem_inst_state/SR[0]                 |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[15][7]_i_1__0_n_1           |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[171][7]_i_1_n_1             |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_uart_wrapper/u_uart/uart_tx_i/tx_data0                         | u_control_unit/mem_inst_state/SR[0]                 |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | AESL_inst_Cipher/ap_CS_fsm_reg[17]_6                             |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | AESL_inst_Cipher/ap_CS_fsm_reg[17]_5                             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | AESL_inst_Cipher/ap_CS_fsm_reg[17]_7                             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | AESL_inst_Cipher/ap_CS_fsm_state17                               |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | AESL_inst_Cipher/reg_210[7]_i_1_n_1                              |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | AESL_inst_Cipher/p_5_in                                          |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | AESL_inst_Cipher/reg_203[7]_i_1_n_1                              |                                                     |                5 |              8 |
+|  CLK100M_IBUF_BUFG      | AESL_inst_Cipher/reg_2100                                        |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[57][7]_i_1_n_1              |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | AESL_inst_Cipher/zext_ln451_reg_332_reg[0]_1                     |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem0_add_d0                                       | u_control_unit/mem_inst_state/SR[0]                 |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | AESL_inst_Cipher/zext_ln451_reg_332_reg[0]_2                     |                                                     |                5 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[165][7]_i_1_n_1             |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[17][7]_i_1_n_1              |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[19][7]_i_1_n_1              |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[20][7]_i_1_n_1              |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[21][7]_i_1_n_1              |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[22][7]_i_1_n_1              |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[23][7]_i_1_n_1              |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[24][7]_i_1_n_1              |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[18][7]_i_1_n_1              |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[25][7]_i_1_n_1              |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[26][7]_i_1_n_1              |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[174][7]_i_1_n_1             |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[175][7]_i_1_n_1             |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[32][7]_i_1_n_1              |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[43][7]_i_1_n_1              |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[49][7]_i_1_n_1              |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[55][7]_i_1_n_1              |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[60][7]_i_1_n_1              |                                                     |                6 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[62][7]_i_1_n_1              |                                                     |                6 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[67][7]_i_1_n_1              |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[29][7]_i_1_n_1              |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[41][7]_i_1_n_1              |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[38][7]_i_1_n_1              |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[47][7]_i_1_n_1              |                                                     |                5 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[3][7]_i_1__0_n_1            |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[59][7]_i_1_n_1              |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[81][7]_i_1_n_1              |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[66][7]_i_1_n_1              |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[82][7]_i_1_n_1              |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[7][7]_i_1__0_n_1            |                                                     |                5 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[83][7]_i_1_n_1              |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[46][7]_i_1_n_1              |                                                     |                5 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[51][7]_i_1_n_1              |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[40][7]_i_1_n_1              |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[73][7]_i_1_n_1              |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[42][7]_i_1_n_1              |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[48][7]_i_1_n_1              |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[36][7]_i_1_n_1              |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[65][7]_i_1_n_1              |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[68][7]_i_1_n_1              |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[70][7]_i_1_n_1              |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[84][7]_i_1_n_1              |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[45][7]_i_1_n_1              |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[50][7]_i_1_n_1              |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[28][7]_i_1_n_1              |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[35][7]_i_1_n_1              |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[33][7]_i_1_n_1              |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[52][7]_i_1_n_1              |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[37][7]_i_1_n_1              |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[58][7]_i_1_n_1              |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[2][7]_i_1__0_n_1            |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[54][7]_i_1_n_1              |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[5][7]_i_1__0_n_1            |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[31][7]_i_1_n_1              |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[63][7]_i_1_n_1              |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[72][7]_i_1_n_1              |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[39][7]_i_1_n_1              |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[74][7]_i_1_n_1              |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[75][7]_i_1_n_1              |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[76][7]_i_1_n_1              |                                                     |                6 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[44][7]_i_1_n_1              |                                                     |                7 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[4][7]_i_1__0_n_1            |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[53][7]_i_1_n_1              |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[56][7]_i_1_n_1              |                                                     |                5 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[71][7]_i_1_n_1              |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[78][7]_i_1_n_1              |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[79][7]_i_1_n_1              |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[69][7]_i_1_n_1              |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[80][7]_i_1_n_1              |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[34][7]_i_1_n_1              |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[27][7]_i_1_n_1              |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[104][7]_i_1_n_1             |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[61][7]_i_1_n_1              |                                                     |                6 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[77][7]_i_1_n_1              |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[30][7]_i_1_n_1              |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[99][7]_i_1_n_1              |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[91][7]_i_1_n_1              |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[97][7]_i_1_n_1              |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[92][7]_i_1_n_1              |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[85][7]_i_1_n_1              |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[8][7]_i_1__0_n_1            |                                                     |                5 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[90][7]_i_1_n_1              |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[95][7]_i_1_n_1              |                                                     |                7 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[96][7]_i_1_n_1              |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[98][7]_i_1_n_1              |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[86][7]_i_1_n_1              |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[94][7]_i_1_n_1              |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[88][7]_i_1_n_1              |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[87][7]_i_1_n_1              |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[93][7]_i_1_n_1              |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[89][7]_i_1_n_1              |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[9][7]_i_1__0_n_1            |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[106][7]_i_1_n_1             |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[119][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[120][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[121][7]_i_1_n_1             |                                                     |                5 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[110][7]_i_1_n_1             |                                                     |                5 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[122][7]_i_1_n_1             |                                                     |                5 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[123][7]_i_1_n_1             |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[112][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[101][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[117][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[124][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[126][7]_i_1_n_1             |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[127][7]_i_1_n_1             |                                                     |                5 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[129][7]_i_1_n_1             |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[12][7]_i_1__0_n_1           |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[102][7]_i_1_n_1             |                                                     |                6 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[130][7]_i_1_n_1             |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[131][7]_i_1_n_1             |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[125][7]_i_1_n_1             |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[132][7]_i_1_n_1             |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[114][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[133][7]_i_1_n_1             |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[116][7]_i_1_n_1             |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[111][7]_i_1_n_1             |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[105][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[118][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[100][7]_i_1_n_1             |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[107][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[109][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[10][7]_i_1__0_n_1           |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[108][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[103][7]_i_1_n_1             |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[113][7]_i_1_n_1             |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[115][7]_i_1_n_1             |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[11][7]_i_1__0_n_1           |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[141][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[145][7]_i_1_n_1             |                                                     |                1 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[137][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[167][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[135][7]_i_1_n_1             |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[170][7]_i_1_n_1             |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[153][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[154][7]_i_1_n_1             |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[158][7]_i_1_n_1             |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[157][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[139][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[163][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[151][7]_i_1_n_1             |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[152][7]_i_1_n_1             |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[173][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[148][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[164][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[159][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[144][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[161][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[162][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[168][7]_i_1_n_1             |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[147][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[149][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[138][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[140][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[150][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[155][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[13][7]_i_1__0_n_1           |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[142][7]_i_1_n_1             |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[143][7]_i_1_n_1             |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[156][7]_i_1_n_1             |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[136][7]_i_1_n_1             |                                                     |                2 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[146][7]_i_1_n_1             |                                                     |                4 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[166][7]_i_1_n_1             |                                                     |                3 |              8 |
+|  CLK100M_IBUF_BUFG      | u_control_unit/mem_inst_RoundKey/mem[172][7]_i_1_n_1             |                                                     |                5 |              8 |
+|  CLK100M_IBUF_BUFG      | u_uart_wrapper/u_uart/uart_rx_i/rx_bit_count0                    | u_control_unit/mem_inst_state/SR[0]                 |                3 |             11 |
+|  CLK100M_IBUF_BUFG      | u_uart_wrapper/u_uart/uart_rx_i/DATA_VLD                         | u_control_unit/uart_rx_d[0][7]_i_1_n_1              |                4 |             16 |
+|  CLK100M_IBUF_BUFG      | AESL_inst_Cipher/reg_2420                                        |                                                     |                7 |             16 |
+|  CLK100M_IBUF_BUFG      | AESL_inst_Cipher/reg_2320                                        |                                                     |                4 |             16 |
+|  CLK100M_IBUF_BUFG      | AESL_inst_Cipher/reg_2220                                        |                                                     |                5 |             16 |
+|  CLK100M_IBUF_BUFG      |                                                                  | u_SevenSeg_Top/i_cnt[0]_i_1_n_1                     |                5 |             20 |
+|  CLK100M_IBUF_BUFG      | AESL_inst_Cipher/grp_InvMixColumns_fu_173/ap_CS_fsm_state4       |                                                     |               16 |             32 |
+|  CLK100M_IBUF_BUFG      | AESL_inst_Cipher/grp_InvMixColumns_fu_173/ap_CS_fsm_state3       |                                                     |               10 |             36 |
+|  CLK100M_IBUF_BUFG      |                                                                  | u_control_unit/mem_inst_state/SR[0]                 |               43 |            113 |
+|  CLK100M_IBUF_BUFG      |                                                                  |                                                     |               76 |            166 |
++-------------------------+------------------------------------------------------------------+-----------------------------------------------------+------------------+----------------+
+
+

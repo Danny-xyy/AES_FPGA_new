@@ -1,0 +1,28 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.sim/sim_1/impl/func/xsim/tb_aes_top_func_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_RoundKey
+INFO: [VRFC 10-311] analyzing module AESL_automem_state
+INFO: [VRFC 10-311] analyzing module AESL_automem_state_0
+INFO: [VRFC 10-311] analyzing module RC5_ENCRYPT_0
+INFO: [VRFC 10-311] analyzing module RC5_ENCRYPT_0_RC5_ENCRYPT
+INFO: [VRFC 10-311] analyzing module SevenSeg_Top
+INFO: [VRFC 10-311] analyzing module UART
+INFO: [VRFC 10-311] analyzing module UART_RX
+INFO: [VRFC 10-311] analyzing module UART_TX
+INFO: [VRFC 10-311] analyzing module apatb_Cipher_top
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-311] analyzing module uart_wrapper
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/sources_1/imports/sources_1/new/uart_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_wrapper
+INFO: [VRFC 10-2458] undeclared symbol tx_busy, assumed default net type wire [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/sources_1/imports/sources_1/new/uart_wrapper.v:128]
+WARNING: [VRFC 10-1195] overwriting previous definition of module uart_wrapper [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/sources_1/imports/sources_1/new/uart_wrapper.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/sim_1/new/tb_aes_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_aes_top
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/sources_1/imports/sources_1/imports/uart_parity.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity UART_PARITY
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/sources_1/imports/sources_1/imports/uart_tx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity UART_TX
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/sources_1/imports/sources_1/imports/uart_rx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity UART_RX
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/sources_1/imports/sources_1/imports/uart.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity UART

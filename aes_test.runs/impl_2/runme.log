@@ -1,0 +1,165 @@
+
+*** Running vivado
+    with args -log aes_top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source aes_top.tcl -notrace
+
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source aes_top.tcl -notrace
+Command: link_design -top aes_top -part xc7a200tfbg676-2
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 71 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.3
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: 'L16' is not a valid site or package pin name. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc:14]
+CRITICAL WARNING: [Common 17-69] Command failed: 'M13' is not a valid site or package pin name. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc:15]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U18' is not a valid site or package pin name. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc:19]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R13' is not a valid site or package pin name. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc:20]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U8' is not a valid site or package pin name. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc:22]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T13' is not a valid site or package pin name. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc:24]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U12' is not a valid site or package pin name. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc:26]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U11' is not a valid site or package pin name. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc:27]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V10' is not a valid site or package pin name. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc:28]
+CRITICAL WARNING: [Common 17-69] Command failed: 'J13' is not a valid site or package pin name. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc:35]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T16' is not a valid site or package pin name. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc:44]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V15' is not a valid site or package pin name. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc:45]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V12' is not a valid site or package pin name. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc:47]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V11' is not a valid site or package pin name. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc:48]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T10' is not a valid site or package pin name. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc:60]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R10' is not a valid site or package pin name. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc:61]
+CRITICAL WARNING: [Common 17-69] Command failed: 'K13' is not a valid site or package pin name. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc:63]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T11' is not a valid site or package pin name. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc:65]
+CRITICAL WARNING: [Common 17-69] Command failed: 'J17' is not a valid site or package pin name. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc:69]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T9' is not a valid site or package pin name. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc:71]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U13' is not a valid site or package pin name. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc:76]
+CRITICAL WARNING: [Vivado 12-1815] Setting property 'IOSTANDARD' is not allowed for GT terminals. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc:81]
+CRITICAL WARNING: [Common 17-69] Command failed: 'M18' is not a valid site or package pin name. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc:84]
+CRITICAL WARNING: [Common 17-69] Command failed: 'P17' is not a valid site or package pin name. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc:85]
+Finished Parsing XDC File [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 0 Warnings, 24 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:24 . Memory (MB): peak = 1568.609 ; gain = 384.039 ; free physical = 408 ; free virtual = 6690
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1656.641 ; gain = 88.031 ; free physical = 395 ; free virtual = 6677
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: cfe5811c
+
+Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2144.266 ; gain = 0.000 ; free physical = 153 ; free virtual = 6263
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 1 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: cfe5811c
+
+Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2144.266 ; gain = 0.000 ; free physical = 153 ; free virtual = 6263
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1294e65d0
+
+Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2144.266 ; gain = 0.000 ; free physical = 152 ; free virtual = 6263
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 2 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 1294e65d0
+
+Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.18 . Memory (MB): peak = 2144.266 ; gain = 0.000 ; free physical = 152 ; free virtual = 6263
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 1294e65d0
+
+Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.22 . Memory (MB): peak = 2144.266 ; gain = 0.000 ; free physical = 152 ; free virtual = 6263
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2144.266 ; gain = 0.000 ; free physical = 152 ; free virtual = 6263
+Ending Logic Optimization Task | Checksum: 1294e65d0
+
+Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.26 . Memory (MB): peak = 2144.266 ; gain = 0.000 ; free physical = 152 ; free virtual = 6263
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=4.380 | TNS=0.000 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 1 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 2
+Ending PowerOpt Patch Enables Task | Checksum: 129399814
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2493.488 ; gain = 0.000 ; free physical = 313 ; free virtual = 6272
+Ending Power Optimization Task | Checksum: 129399814
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2493.488 ; gain = 349.223 ; free physical = 318 ; free virtual = 6277
+INFO: [Common 17-83] Releasing license: Implementation
+28 Infos, 0 Warnings, 24 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:34 . Memory (MB): peak = 2493.488 ; gain = 924.879 ; free physical = 318 ; free virtual = 6277
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2493.488 ; gain = 0.000 ; free physical = 316 ; free virtual = 6278
+INFO: [Common 17-1381] The checkpoint '/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.runs/impl_2/aes_top_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file aes_top_drc_opted.rpt -pb aes_top_drc_opted.pb -rpx aes_top_drc_opted.rpx
+Command: report_drc -file aes_top_drc_opted.rpt -pb aes_top_drc_opted.pb -rpx aes_top_drc_opted.rpx
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.runs/impl_2/aes_top_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+ERROR: [DRC BIVC-1] Bank IO standard Vcc: Conflicting Vcc voltages in bank 34. For example, the following two ports in this bank have conflicting VCCOs:  
+SW[8] (LVCMOS18, requiring VCCO=1.800) and SSEG_AN[6] (LVCMOS33, requiring VCCO=3.300)
+INFO: [Vivado_Tcl 4-198] DRC finished with 1 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-23] Error(s) found during DRC. Placer not run.
+INFO: [Common 17-83] Releasing license: Implementation
+41 Infos, 0 Warnings, 24 Critical Warnings and 2 Errors encountered.
+place_design failed
+ERROR: [Common 17-39] 'place_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Tue Jul  2 13:10:41 2019...

@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_aes_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_aes_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="6857828571428fs"></ZoomStartTime>
+      <ZoomEndTime time="8300830000001fs"></ZoomEndTime>
+      <Cursor1Time time="10001000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="161"></NameColumnWidth>
+      <ValueColumnWidth column_width="67"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="79" />
+   <wave_markers>
+      <marker label="" time="168288666000" />
+   </wave_markers>
+   <wvobject type="logic" fp_name="/tb_aes_top/apatb_Cipher_top_inst/RC5_ENCRYPT_inst/pt_ce0">
+      <obj_property name="ElementShortName">pt_ce0</obj_property>
+      <obj_property name="ObjectShortName">pt_ce0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/apatb_Cipher_top_inst/RC5_ENCRYPT_inst/pt_ce1">
+      <obj_property name="ElementShortName">pt_ce1</obj_property>
+      <obj_property name="ObjectShortName">pt_ce1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/apatb_Cipher_top_inst/RC5_ENCRYPT_inst/ct_ce0">
+      <obj_property name="ElementShortName">ct_ce0</obj_property>
+      <obj_property name="ObjectShortName">ct_ce0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/apatb_Cipher_top_inst/RC5_ENCRYPT_inst/ct_we0">
+      <obj_property name="ElementShortName">ct_we0</obj_property>
+      <obj_property name="ObjectShortName">ct_we0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/apatb_Cipher_top_inst/RC5_ENCRYPT_inst/ct_ce1">
+      <obj_property name="ElementShortName">ct_ce1</obj_property>
+      <obj_property name="ObjectShortName">ct_ce1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/apatb_Cipher_top_inst/RC5_ENCRYPT_inst/ct_we1">
+      <obj_property name="ElementShortName">ct_we1</obj_property>
+      <obj_property name="ObjectShortName">ct_we1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/apatb_Cipher_top_inst/RC5_ENCRYPT_inst/ap_clk">
+      <obj_property name="ElementShortName">ap_clk</obj_property>
+      <obj_property name="ObjectShortName">ap_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/apatb_Cipher_top_inst/RC5_ENCRYPT_inst/ap_rst">
+      <obj_property name="ElementShortName">ap_rst</obj_property>
+      <obj_property name="ObjectShortName">ap_rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/apatb_Cipher_top_inst/RC5_ENCRYPT_inst/ap_start">
+      <obj_property name="ElementShortName">ap_start</obj_property>
+      <obj_property name="ObjectShortName">ap_start</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/apatb_Cipher_top_inst/RC5_ENCRYPT_inst/ap_done">
+      <obj_property name="ElementShortName">ap_done</obj_property>
+      <obj_property name="ObjectShortName">ap_done</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/apatb_Cipher_top_inst/RC5_ENCRYPT_inst/ap_idle">
+      <obj_property name="ElementShortName">ap_idle</obj_property>
+      <obj_property name="ObjectShortName">ap_idle</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/apatb_Cipher_top_inst/RC5_ENCRYPT_inst/ap_ready">
+      <obj_property name="ElementShortName">ap_ready</obj_property>
+      <obj_property name="ObjectShortName">ap_ready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/mem0_mem_q0">
+      <obj_property name="ElementShortName">mem0_mem_q0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem0_mem_q0[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/mem1_mem_q0">
+      <obj_property name="ElementShortName">mem1_mem_q0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem1_mem_q0[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/mem2_mem_q0">
+      <obj_property name="ElementShortName">mem2_mem_q0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem2_mem_q0[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/RC5_ENCRYPT_inst/pt_address0">
+      <obj_property name="ElementShortName">pt_address0[0:0]</obj_property>
+      <obj_property name="ObjectShortName">pt_address0[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/RC5_ENCRYPT_inst/pt_q0">
+      <obj_property name="ElementShortName">pt_q0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pt_q0[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/RC5_ENCRYPT_inst/pt_address1">
+      <obj_property name="ElementShortName">pt_address1[0:0]</obj_property>
+      <obj_property name="ObjectShortName">pt_address1[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/RC5_ENCRYPT_inst/pt_q1">
+      <obj_property name="ElementShortName">pt_q1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pt_q1[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/RC5_ENCRYPT_inst/ct_address0">
+      <obj_property name="ElementShortName">ct_address0[0:0]</obj_property>
+      <obj_property name="ObjectShortName">ct_address0[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/RC5_ENCRYPT_inst/ct_d0">
+      <obj_property name="ElementShortName">ct_d0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ct_d0[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/RC5_ENCRYPT_inst/ct_address1">
+      <obj_property name="ElementShortName">ct_address1[0:0]</obj_property>
+      <obj_property name="ObjectShortName">ct_address1[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/RC5_ENCRYPT_inst/ct_d1">
+      <obj_property name="ElementShortName">ct_d1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ct_d1[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/apatb_Cipher_top_inst/RC5_ENCRYPT_inst/S_ce0">
+      <obj_property name="ElementShortName">S_ce0</obj_property>
+      <obj_property name="ObjectShortName">S_ce0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/apatb_Cipher_top_inst/RC5_ENCRYPT_inst/S_ce1">
+      <obj_property name="ElementShortName">S_ce1</obj_property>
+      <obj_property name="ObjectShortName">S_ce1</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/RC5_ENCRYPT_inst/S_address0">
+      <obj_property name="ElementShortName">S_address0[4:0]</obj_property>
+      <obj_property name="ObjectShortName">S_address0[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/RC5_ENCRYPT_inst/S_q0">
+      <obj_property name="ElementShortName">S_q0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_q0[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/RC5_ENCRYPT_inst/S_address1">
+      <obj_property name="ElementShortName">S_address1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">S_address1[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/RC5_ENCRYPT_inst/S_q1">
+      <obj_property name="ElementShortName">S_q1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_q1[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/I_MEM0_CE0">
+      <obj_property name="ElementShortName">I_MEM0_CE0</obj_property>
+      <obj_property name="ObjectShortName">I_MEM0_CE0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/I_MEM0_WE0">
+      <obj_property name="ElementShortName">I_MEM0_WE0</obj_property>
+      <obj_property name="ObjectShortName">I_MEM0_WE0</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/I_MEM0_ADDRESS0">
+      <obj_property name="ElementShortName">I_MEM0_ADDRESS0[0:0]</obj_property>
+      <obj_property name="ObjectShortName">I_MEM0_ADDRESS0[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/I_MEM0_D0">
+      <obj_property name="ElementShortName">I_MEM0_D0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">I_MEM0_D0[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/O_MEM0_Q0">
+      <obj_property name="ElementShortName">O_MEM0_Q0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">O_MEM0_Q0[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/I_MEM0_CE1">
+      <obj_property name="ElementShortName">I_MEM0_CE1</obj_property>
+      <obj_property name="ObjectShortName">I_MEM0_CE1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/I_MEM0_WE1">
+      <obj_property name="ElementShortName">I_MEM0_WE1</obj_property>
+      <obj_property name="ObjectShortName">I_MEM0_WE1</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/I_MEM0_ADDRESS1">
+      <obj_property name="ElementShortName">I_MEM0_ADDRESS1[0:0]</obj_property>
+      <obj_property name="ObjectShortName">I_MEM0_ADDRESS1[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/I_MEM0_D1">
+      <obj_property name="ElementShortName">I_MEM0_D1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">I_MEM0_D1[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/O_MEM0_Q1">
+      <obj_property name="ElementShortName">O_MEM0_Q1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">O_MEM0_Q1[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/I_MEM1_CE0">
+      <obj_property name="ElementShortName">I_MEM1_CE0</obj_property>
+      <obj_property name="ObjectShortName">I_MEM1_CE0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/I_MEM1_WE0">
+      <obj_property name="ElementShortName">I_MEM1_WE0</obj_property>
+      <obj_property name="ObjectShortName">I_MEM1_WE0</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/I_MEM1_ADDRESS0">
+      <obj_property name="ElementShortName">I_MEM1_ADDRESS0[4:0]</obj_property>
+      <obj_property name="ObjectShortName">I_MEM1_ADDRESS0[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/I_MEM1_D0">
+      <obj_property name="ElementShortName">I_MEM1_D0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">I_MEM1_D0[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/O_MEM1_Q0">
+      <obj_property name="ElementShortName">O_MEM1_Q0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">O_MEM1_Q0[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/I_MEM1_CE1">
+      <obj_property name="ElementShortName">I_MEM1_CE1</obj_property>
+      <obj_property name="ObjectShortName">I_MEM1_CE1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/I_MEM1_WE1">
+      <obj_property name="ElementShortName">I_MEM1_WE1</obj_property>
+      <obj_property name="ObjectShortName">I_MEM1_WE1</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/I_MEM1_ADDRESS1">
+      <obj_property name="ElementShortName">I_MEM1_ADDRESS1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">I_MEM1_ADDRESS1[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/I_MEM1_D1">
+      <obj_property name="ElementShortName">I_MEM1_D1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">I_MEM1_D1[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/O_MEM1_Q1">
+      <obj_property name="ElementShortName">O_MEM1_Q1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">O_MEM1_Q1[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/I_MEM2_CE0">
+      <obj_property name="ElementShortName">I_MEM2_CE0</obj_property>
+      <obj_property name="ObjectShortName">I_MEM2_CE0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/I_MEM2_WE0">
+      <obj_property name="ElementShortName">I_MEM2_WE0</obj_property>
+      <obj_property name="ObjectShortName">I_MEM2_WE0</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/I_MEM2_ADDRESS0">
+      <obj_property name="ElementShortName">I_MEM2_ADDRESS0[0:0]</obj_property>
+      <obj_property name="ObjectShortName">I_MEM2_ADDRESS0[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/I_MEM2_D0">
+      <obj_property name="ElementShortName">I_MEM2_D0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">I_MEM2_D0[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/O_MEM2_Q0">
+      <obj_property name="ElementShortName">O_MEM2_Q0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">O_MEM2_Q0[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/I_MEM2_CE1">
+      <obj_property name="ElementShortName">I_MEM2_CE1</obj_property>
+      <obj_property name="ObjectShortName">I_MEM2_CE1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/I_MEM2_WE1">
+      <obj_property name="ElementShortName">I_MEM2_WE1</obj_property>
+      <obj_property name="ObjectShortName">I_MEM2_WE1</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/I_MEM2_ADDRESS1">
+      <obj_property name="ElementShortName">I_MEM2_ADDRESS1[0:0]</obj_property>
+      <obj_property name="ObjectShortName">I_MEM2_ADDRESS1[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/I_MEM2_D1">
+      <obj_property name="ElementShortName">I_MEM2_D1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">I_MEM2_D1[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/apatb_Cipher_top_inst/u_control_unit/O_MEM2_Q1">
+      <obj_property name="ElementShortName">O_MEM2_Q1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">O_MEM2_Q1[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/cpu_resetn">
+      <obj_property name="ElementShortName">cpu_resetn</obj_property>
+      <obj_property name="ObjectShortName">cpu_resetn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/uart_start">
+      <obj_property name="ElementShortName">uart_start</obj_property>
+      <obj_property name="ObjectShortName">uart_start</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group437">
+      <obj_property name="label">mem_IO</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/u_uart_wrapper/CLK">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/u_uart_wrapper/CPU_RESET">
+      <obj_property name="ElementShortName">CPU_RESET</obj_property>
+      <obj_property name="ObjectShortName">CPU_RESET</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/u_uart_wrapper/USB_UART_TX">
+      <obj_property name="ElementShortName">USB_UART_TX</obj_property>
+      <obj_property name="ObjectShortName">USB_UART_TX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/u_uart_wrapper/USB_UART_RX">
+      <obj_property name="ElementShortName">USB_UART_RX</obj_property>
+      <obj_property name="ObjectShortName">USB_UART_RX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/u_uart_wrapper/O_RX_OUT">
+      <obj_property name="ElementShortName">O_RX_OUT[7:0]</obj_property>
+      <obj_property name="ObjectShortName">O_RX_OUT[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/u_uart_wrapper/O_RX_VLD">
+      <obj_property name="ElementShortName">O_RX_VLD</obj_property>
+      <obj_property name="ObjectShortName">O_RX_VLD</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/u_uart_wrapper/O_FRAME_ERROR">
+      <obj_property name="ElementShortName">O_FRAME_ERROR</obj_property>
+      <obj_property name="ObjectShortName">O_FRAME_ERROR</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_aes_top/u_uart_wrapper/I_TX_DATA">
+      <obj_property name="ElementShortName">I_TX_DATA[7:0]</obj_property>
+      <obj_property name="ObjectShortName">I_TX_DATA[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/u_uart_wrapper/I_TX_START">
+      <obj_property name="ElementShortName">I_TX_START</obj_property>
+      <obj_property name="ObjectShortName">I_TX_START</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_aes_top/u_uart_wrapper/O_BUSY">
+      <obj_property name="ElementShortName">O_BUSY</obj_property>
+      <obj_property name="ObjectShortName">O_BUSY</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group861">
+      <obj_property name="label">key_mem_IO</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group846">
+      <obj_property name="label">state_mem_IO</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group781">
+      <obj_property name="label">control_IO</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group192">
+      <obj_property name="label">uart_IO</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group166">
+      <obj_property name="label">state_IO</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group165">
+      <obj_property name="label">RoundKey_IO</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group122">
+      <obj_property name="label">Cipher_IO</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>

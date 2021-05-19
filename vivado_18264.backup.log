@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Feb 20 17:32:06 2020
+# Process ID: 18264
+# Current directory: C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/AES_DEC/Lab1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11028 C:\Users\lisha\Desktop\HS\HW\LAB1\EL9453_Hardware_Security_and_Trust-master\AES_DEC\Lab1\aes_test.xpr
+# Log file: C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/AES_DEC/Lab1/vivado.log
+# Journal file: C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/AES_DEC/Lab1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/AES_DEC/Lab1/aes_test.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/AES_DEC/Lab1'
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/homework/tiny-AES-c'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/homework/tiny-AES-c'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:16 . Memory (MB): peak = 824.547 ; gain = 186.148
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF676A
+open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1997.691 ; gain = 1116.672
+set_property PROGRAM.FILE {C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/AES_DEC/Lab1/aes_test.runs/impl_1/apatb_Cipher_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/AES_DEC/Lab1/aes_test.runs/impl_1/apatb_Cipher_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292ABF676A
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 20 17:58:49 2020...

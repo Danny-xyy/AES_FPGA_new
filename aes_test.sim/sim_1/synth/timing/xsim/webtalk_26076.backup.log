@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Tue Jul  2 13:15:44 2019
+# Process ID: 26076
+# Current directory: /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.sim/sim_1/synth/timing/xsim
+# Command line: wbtcv -mode batch -source /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.sim/sim_1/synth/timing/xsim/xsim.dir/tb_aes_top_time_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.sim/sim_1/synth/timing/xsim/webtalk.log
+# Journal file: /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.sim/sim_1/synth/timing/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.sim/sim_1/synth/timing/xsim/xsim.dir/tb_aes_top_time_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.sim/sim_1/synth/timing/xsim/xsim.dir/tb_aes_top_time_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Jul  2 13:15:46 2019. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2017.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Jul  2 13:15:46 2019...

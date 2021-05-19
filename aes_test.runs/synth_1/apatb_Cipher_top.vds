@@ -1,0 +1,948 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Feb 15 16:01:45 2020
+# Process ID: 16640
+# Current directory: C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.runs/synth_1
+# Command line: vivado.exe -log apatb_Cipher_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source apatb_Cipher_top.tcl
+# Log file: C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.runs/synth_1/apatb_Cipher_top.vds
+# Journal file: C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source apatb_Cipher_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 356.230 ; gain = 63.766
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/homework/tiny-AES-c'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.cache/ip 
+Command: synth_design -top apatb_Cipher_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8744 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 820.273 ; gain = 178.777
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'apatb_Cipher_top' [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/tiny-AES-c/Cipher.autotb.v:16]
+	Parameter INPUT_SIZE bound to: 16 - type: integer 
+	Parameter KEY_SIZE bound to: 176 - type: integer 
+	Parameter MEM2_SIZE bound to: 16 - type: integer 
+	Parameter MEM0_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter MEM0_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter MEM0_DEPTH bound to: 16 - type: integer 
+	Parameter MEM1_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter MEM1_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter MEM1_DEPTH bound to: 176 - type: integer 
+	Parameter MEM2_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter MEM2_ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter MEM2_DEPTH bound to: 2 - type: integer 
+	Parameter DLY bound to: 0.100000 - type: float 
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/new/control_unit.v:34]
+	Parameter INPUT_SIZE bound to: 16 - type: integer 
+	Parameter KEY_SIZE bound to: 176 - type: integer 
+	Parameter MEM2_SIZE bound to: 16 - type: integer 
+	Parameter MEM0_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter MEM0_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter MEM0_DEPTH bound to: 16 - type: integer 
+	Parameter MEM1_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter MEM1_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter MEM1_DEPTH bound to: 176 - type: integer 
+	Parameter MEM2_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter MEM2_ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter MEM2_DEPTH bound to: 2 - type: integer 
+	Parameter DLY bound to: 0.100000 - type: float 
+	Parameter SIZE bound to: 4 - type: integer 
+	Parameter IDLE bound to: 4'b0000 
+	Parameter INVALID bound to: 4'b0001 
+	Parameter ENTER_KEY bound to: 4'b0010 
+	Parameter ENTER_IP bound to: 4'b0011 
+	Parameter ENABLE bound to: 4'b0101 
+	Parameter VIEW_KEY bound to: 4'b0110 
+	Parameter VIEW_IP bound to: 4'b0111 
+INFO: [Synth 8-6157] synthesizing module 'AESL_automem_state' [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/verilog/AESL_automem_state.v:10]
+	Parameter TV_IN bound to: ../tv/cdatafile/c.Cipher.autotvin_state.dat - type: string 
+	Parameter TV_OUT bound to: ../tv/rtldatafile/rtl.Cipher.autotvout_state.dat - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+	Parameter DLY bound to: 0.100000 - type: float 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/verilog/AESL_automem_state.v:164]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/verilog/AESL_automem_state.v:177]
+WARNING: [Synth 8-4767] Trying to implement RAM 'mem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "mem_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'AESL_automem_state' (1#1) [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/verilog/AESL_automem_state.v:10]
+WARNING: [Synth 8-689] width (32) of port connection 'ce1' does not match port width (1) of module 'AESL_automem_state' [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/new/control_unit.v:587]
+INFO: [Synth 8-6157] synthesizing module 'AESL_automem_RoundKey' [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/verilog/AESL_automem_RoundKey.v:11]
+	Parameter TV_IN bound to: ../tv/cdatafile/c.Cipher.autotvin_RoundKey.dat - type: string 
+	Parameter TV_OUT bound to: ../tv/rtldatafile/rtl.Cipher.autotvout_RoundKey.dat - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 176 - type: integer 
+	Parameter DLY bound to: 0.100000 - type: float 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/verilog/AESL_automem_RoundKey.v:373]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/verilog/AESL_automem_RoundKey.v:386]
+WARNING: [Synth 8-4767] Trying to implement RAM 'mem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "mem_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'AESL_automem_RoundKey' (2#1) [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/verilog/AESL_automem_RoundKey.v:11]
+WARNING: [Synth 8-689] width (32) of port connection 'ce1' does not match port width (1) of module 'AESL_automem_RoundKey' [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/new/control_unit.v:608]
+INFO: [Synth 8-6157] synthesizing module 'AESL_automem_state__parameterized0' [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/verilog/AESL_automem_state.v:10]
+	Parameter TV_IN bound to: ../tv/cdatafile/c.Cipher.autotvin_state.dat - type: string 
+	Parameter TV_OUT bound to: ../tv/rtldatafile/rtl.Cipher.autotvout_state.dat - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter DLY bound to: 0.100000 - type: float 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/verilog/AESL_automem_state.v:164]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/verilog/AESL_automem_state.v:177]
+WARNING: [Synth 8-4767] Trying to implement RAM 'mem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "mem_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'AESL_automem_state__parameterized0' (2#1) [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/verilog/AESL_automem_state.v:10]
+WARNING: [Synth 8-6014] Unused sequential element sw0_d_reg was removed.  [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/new/control_unit.v:528]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (3#1) [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/new/control_unit.v:34]
+INFO: [Synth 8-6157] synthesizing module 'InvCipher' [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvCipher.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 35'b00000000000000000000000000000000001 
+	Parameter ap_ST_fsm_state2 bound to: 35'b00000000000000000000000000000000010 
+	Parameter ap_ST_fsm_state3 bound to: 35'b00000000000000000000000000000000100 
+	Parameter ap_ST_fsm_state4 bound to: 35'b00000000000000000000000000000001000 
+	Parameter ap_ST_fsm_state5 bound to: 35'b00000000000000000000000000000010000 
+	Parameter ap_ST_fsm_state6 bound to: 35'b00000000000000000000000000000100000 
+	Parameter ap_ST_fsm_state7 bound to: 35'b00000000000000000000000000001000000 
+	Parameter ap_ST_fsm_state8 bound to: 35'b00000000000000000000000000010000000 
+	Parameter ap_ST_fsm_state9 bound to: 35'b00000000000000000000000000100000000 
+	Parameter ap_ST_fsm_state10 bound to: 35'b00000000000000000000000001000000000 
+	Parameter ap_ST_fsm_state11 bound to: 35'b00000000000000000000000010000000000 
+	Parameter ap_ST_fsm_state12 bound to: 35'b00000000000000000000000100000000000 
+	Parameter ap_ST_fsm_state13 bound to: 35'b00000000000000000000001000000000000 
+	Parameter ap_ST_fsm_state14 bound to: 35'b00000000000000000000010000000000000 
+	Parameter ap_ST_fsm_state15 bound to: 35'b00000000000000000000100000000000000 
+	Parameter ap_ST_fsm_state16 bound to: 35'b00000000000000000001000000000000000 
+	Parameter ap_ST_fsm_state17 bound to: 35'b00000000000000000010000000000000000 
+	Parameter ap_ST_fsm_state18 bound to: 35'b00000000000000000100000000000000000 
+	Parameter ap_ST_fsm_state19 bound to: 35'b00000000000000001000000000000000000 
+	Parameter ap_ST_fsm_state20 bound to: 35'b00000000000000010000000000000000000 
+	Parameter ap_ST_fsm_state21 bound to: 35'b00000000000000100000000000000000000 
+	Parameter ap_ST_fsm_state22 bound to: 35'b00000000000001000000000000000000000 
+	Parameter ap_ST_fsm_state23 bound to: 35'b00000000000010000000000000000000000 
+	Parameter ap_ST_fsm_state24 bound to: 35'b00000000000100000000000000000000000 
+	Parameter ap_ST_fsm_state25 bound to: 35'b00000000001000000000000000000000000 
+	Parameter ap_ST_fsm_state26 bound to: 35'b00000000010000000000000000000000000 
+	Parameter ap_ST_fsm_state27 bound to: 35'b00000000100000000000000000000000000 
+	Parameter ap_ST_fsm_state28 bound to: 35'b00000001000000000000000000000000000 
+	Parameter ap_ST_fsm_state29 bound to: 35'b00000010000000000000000000000000000 
+	Parameter ap_ST_fsm_state30 bound to: 35'b00000100000000000000000000000000000 
+	Parameter ap_ST_fsm_state31 bound to: 35'b00001000000000000000000000000000000 
+	Parameter ap_ST_fsm_state32 bound to: 35'b00010000000000000000000000000000000 
+	Parameter ap_ST_fsm_state33 bound to: 35'b00100000000000000000000000000000000 
+	Parameter ap_ST_fsm_state34 bound to: 35'b01000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state35 bound to: 35'b10000000000000000000000000000000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvCipher.v:103]
+INFO: [Synth 8-6157] synthesizing module 'InvMixColumns' [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvMixColumns.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 6'b000001 
+	Parameter ap_ST_fsm_state2 bound to: 6'b000010 
+	Parameter ap_ST_fsm_state3 bound to: 6'b000100 
+	Parameter ap_ST_fsm_state4 bound to: 6'b001000 
+	Parameter ap_ST_fsm_state5 bound to: 6'b010000 
+	Parameter ap_ST_fsm_state6 bound to: 6'b100000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvMixColumns.v:65]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvMixColumns.v:408]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvMixColumns.v:410]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvMixColumns.v:412]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvMixColumns.v:414]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvMixColumns.v:416]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvMixColumns.v:418]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvMixColumns.v:420]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvMixColumns.v:422]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvMixColumns.v:424]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvMixColumns.v:426]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvMixColumns.v:428]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvMixColumns.v:430]
+INFO: [Synth 8-6155] done synthesizing module 'InvMixColumns' (4#1) [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvMixColumns.v:10]
+INFO: [Synth 8-6157] synthesizing module 'AddRoundKey' [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/AddRoundKey.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_state3 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state4 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/AddRoundKey.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'AddRoundKey' (5#1) [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/AddRoundKey.v:10]
+INFO: [Synth 8-6157] synthesizing module 'InvSubBytes' [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvSubBytes.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 5'b00001 
+	Parameter ap_ST_fsm_state2 bound to: 5'b00010 
+	Parameter ap_ST_fsm_state3 bound to: 5'b00100 
+	Parameter ap_ST_fsm_state4 bound to: 5'b01000 
+	Parameter ap_ST_fsm_state5 bound to: 5'b10000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvSubBytes.v:49]
+INFO: [Synth 8-6157] synthesizing module 'InvSubBytes_rsbox' [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvSubBytes_rsbox.v:39]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'InvSubBytes_rsbox_rom' [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvSubBytes_rsbox.v:6]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 256 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './InvSubBytes_rsbox_rom.dat' is read successfully [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvSubBytes_rsbox.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'InvSubBytes_rsbox_rom' (6#1) [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvSubBytes_rsbox.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'InvSubBytes_rsbox' (7#1) [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvSubBytes_rsbox.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'InvSubBytes' (8#1) [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvSubBytes.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'InvCipher' (9#1) [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvCipher.v:12]
+INFO: [Synth 8-638] synthesizing module 'SevenSeg_Top' [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/7segNexys/SevenSeg_Top.vhd:15]
+INFO: [Synth 8-3491] module 'Hex2LED' declared at 'C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/7segNexys/Hex2SevenSegConverter.vhd:6' bound to instance 'CONV1' of component 'Hex2LED' [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/7segNexys/SevenSeg_Top.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'Hex2LED' [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/7segNexys/Hex2SevenSegConverter.vhd:13]
+INFO: [Synth 8-226] default block is never used [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/7segNexys/Hex2SevenSegConverter.vhd:37]
+WARNING: [Synth 8-614] signal 'alphabet' is read in the process but is not in the sensitivity list [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/7segNexys/Hex2SevenSegConverter.vhd:15]
+WARNING: [Synth 8-614] signal 'X' is read in the process but is not in the sensitivity list [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/7segNexys/Hex2SevenSegConverter.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Hex2LED' (10#1) [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/7segNexys/Hex2SevenSegConverter.vhd:13]
+INFO: [Synth 8-3491] module 'Hex2LED' declared at 'C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/7segNexys/Hex2SevenSegConverter.vhd:6' bound to instance 'CONV2' of component 'Hex2LED' [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/7segNexys/SevenSeg_Top.vhd:84]
+INFO: [Synth 8-3491] module 'Hex2LED' declared at 'C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/7segNexys/Hex2SevenSegConverter.vhd:6' bound to instance 'CONV3' of component 'Hex2LED' [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/7segNexys/SevenSeg_Top.vhd:85]
+INFO: [Synth 8-3491] module 'Hex2LED' declared at 'C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/7segNexys/Hex2SevenSegConverter.vhd:6' bound to instance 'CONV4' of component 'Hex2LED' [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/7segNexys/SevenSeg_Top.vhd:86]
+INFO: [Synth 8-3491] module 'Hex2LED' declared at 'C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/7segNexys/Hex2SevenSegConverter.vhd:6' bound to instance 'CONV5' of component 'Hex2LED' [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/7segNexys/SevenSeg_Top.vhd:87]
+INFO: [Synth 8-3491] module 'Hex2LED' declared at 'C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/7segNexys/Hex2SevenSegConverter.vhd:6' bound to instance 'CONV6' of component 'Hex2LED' [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/7segNexys/SevenSeg_Top.vhd:88]
+INFO: [Synth 8-3491] module 'Hex2LED' declared at 'C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/7segNexys/Hex2SevenSegConverter.vhd:6' bound to instance 'CONV7' of component 'Hex2LED' [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/7segNexys/SevenSeg_Top.vhd:89]
+INFO: [Synth 8-3491] module 'Hex2LED' declared at 'C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/7segNexys/Hex2SevenSegConverter.vhd:6' bound to instance 'CONV8' of component 'Hex2LED' [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/7segNexys/SevenSeg_Top.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'SevenSeg_Top' (11#1) [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/7segNexys/SevenSeg_Top.vhd:15]
+INFO: [Synth 8-6157] synthesizing module 'uart_wrapper' [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/sources_1/new/uart_wrapper.v:23]
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter PARITY_BIT bound to: none - type: string 
+	Parameter NO_BYTE_SEND bound to: 1 - type: integer 
+	Parameter SIZE bound to: 2 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter START_TASK bound to: 2'b01 
+	Parameter TASK_PROGRESS bound to: 2'b10 
+	Parameter TASK_END bound to: 2'b11 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/sources_1/new/uart_wrapper.v:31]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/sources_1/new/uart_wrapper.v:32]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/sources_1/new/uart_wrapper.v:49]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/sources_1/new/uart_wrapper.v:50]
+INFO: [Synth 8-226] default block is never used [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/sources_1/new/uart_wrapper.v:73]
+INFO: [Synth 8-638] synthesizing module 'UART' [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/sources_1/imports/uart.vhd:42]
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter PARITY_BIT bound to: none - type: string 
+	Parameter USE_DEBOUNCER bound to: 1 - type: bool 
+INFO: [Synth 8-638] synthesizing module 'UART_TX' [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/sources_1/imports/uart_tx.vhd:31]
+	Parameter PARITY_BIT bound to: none - type: string 
+INFO: [Synth 8-256] done synthesizing module 'UART_TX' (12#1) [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/sources_1/imports/uart_tx.vhd:31]
+INFO: [Synth 8-638] synthesizing module 'UART_RX' [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/sources_1/imports/uart_rx.vhd:31]
+	Parameter PARITY_BIT bound to: none - type: string 
+INFO: [Synth 8-256] done synthesizing module 'UART_RX' (13#1) [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/sources_1/imports/uart_rx.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'UART' (14#1) [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/sources_1/imports/uart.vhd:42]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_uart'. This will prevent further optimization [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/sources_1/new/uart_wrapper.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'uart_wrapper' (15#1) [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/sources_1/new/uart_wrapper.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'apatb_Cipher_top' (16#1) [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/sources_1/imports/tiny-AES-c/Cipher.autotb.v:16]
+WARNING: [Synth 8-3917] design apatb_Cipher_top has port UART_CTS driven by constant 0
+WARNING: [Synth 8-3331] design Hex2LED has unconnected port CLK
+WARNING: [Synth 8-3331] design InvSubBytes_rsbox has unconnected port reset
+WARNING: [Synth 8-3331] design AddRoundKey has unconnected port round[5]
+WARNING: [Synth 8-3331] design AddRoundKey has unconnected port round[4]
+WARNING: [Synth 8-3331] design AESL_automem_state__parameterized0 has unconnected port ready
+WARNING: [Synth 8-3331] design AESL_automem_state__parameterized0 has unconnected port done
+WARNING: [Synth 8-3331] design AESL_automem_RoundKey has unconnected port ready
+WARNING: [Synth 8-3331] design AESL_automem_RoundKey has unconnected port done
+WARNING: [Synth 8-3331] design AESL_automem_state has unconnected port ready
+WARNING: [Synth 8-3331] design AESL_automem_state has unconnected port done
+WARNING: [Synth 8-3331] design control_unit has unconnected port O_LED[15]
+WARNING: [Synth 8-3331] design control_unit has unconnected port O_LED[14]
+WARNING: [Synth 8-3331] design control_unit has unconnected port O_LED[13]
+WARNING: [Synth 8-3331] design control_unit has unconnected port O_LED[12]
+WARNING: [Synth 8-3331] design control_unit has unconnected port O_LED[11]
+WARNING: [Synth 8-3331] design control_unit has unconnected port O_LED[10]
+WARNING: [Synth 8-3331] design control_unit has unconnected port O_LED[9]
+WARNING: [Synth 8-3331] design control_unit has unconnected port O_LED[8]
+WARNING: [Synth 8-3331] design control_unit has unconnected port O_LED[7]
+WARNING: [Synth 8-3331] design control_unit has unconnected port O_LED[6]
+WARNING: [Synth 8-3331] design control_unit has unconnected port O_LED[5]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[15]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[14]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[13]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[12]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[11]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[10]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[9]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[8]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[7]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[6]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[5]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[4]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[3]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[2]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[0]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_AP_IDLE
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_AP_READY
+WARNING: [Synth 8-3331] design apatb_Cipher_top has unconnected port UART_RTS
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 890.602 ; gain = 249.105
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 890.602 ; gain = 249.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 890.602 ; gain = 249.105
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc]
+Finished Parsing XDC File [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.srcs/constrs_1/imports/temp2/nexsys4_ddr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/apatb_Cipher_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/apatb_Cipher_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1043.602 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1043.602 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1043.602 ; gain = 402.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1043.602 ; gain = 402.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1043.602 ; gain = 402.105
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'state_addr_reg_716_reg[1:0]' into 'tmp_reg_710_reg[1:0]' [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvMixColumns.v:592]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_reg_710_reg' and it is trimmed from '3' to '2' bits. [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvMixColumns.v:235]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4471] merging register 'state_addr_reg_716_reg[3:2]' into 'tmp_reg_710_reg[3:2]' [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvMixColumns.v:234]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'tx_pstate_reg' in module 'UART_TX'
+INFO: [Synth 8-5544] ROM "tx_data_out_sel" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'rx_pstate_reg' in module 'UART_RX'
+INFO: [Synth 8-802] inferred FSM for state register 'state_d_reg' in module 'uart_wrapper'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                            00001 |                              000
+                  txsync |                            00010 |                              001
+                startbit |                            00100 |                              010
+                databits |                            01000 |                              011
+                 stopbit |                            10000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'tx_pstate_reg' using encoding 'one-hot' in module 'UART_TX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                              000
+                startbit |                             0010 |                              001
+                databits |                             0100 |                              010
+                 stopbit |                             1000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_pstate_reg' using encoding 'one-hot' in module 'UART_RX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+              START_TASK |                               01 |                               01
+           TASK_PROGRESS |                               10 |                               10
+                TASK_END |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_d_reg' using encoding 'sequential' in module 'uart_wrapper'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 1043.602 ; gain = 402.105
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 7     
+	   2 Input      3 Bit       Adders := 7     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 10    
+	  11 Input      8 Bit         XORs := 1     
+	   9 Input      8 Bit         XORs := 3     
++---Registers : 
+	               35 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 226   
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 13    
+	                3 Bit    Registers := 14    
+	                2 Bit    Registers := 12    
+	                1 Bit    Registers := 13    
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input   1408 Bit        Muxes := 1     
+	   2 Input    128 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     35 Bit        Muxes := 1     
+	  36 Input     35 Bit        Muxes := 1     
+	   2 Input     34 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 11    
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 80    
+	  32 Input      8 Bit        Muxes := 8     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   7 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 3     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 17    
+	   4 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 10    
+	   9 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 13    
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 44    
+	   5 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module AESL_automem_state 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 18    
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 35    
+	   2 Input      1 Bit        Muxes := 2     
+Module AESL_automem_RoundKey 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 178   
++---Muxes : 
+	   2 Input   1408 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 19    
+	   2 Input      1 Bit        Muxes := 2     
+Module AESL_automem_state__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 2     
+Module control_unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 5     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 22    
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 12    
+Module InvMixColumns 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 9     
+	  11 Input      8 Bit         XORs := 1     
+	   9 Input      8 Bit         XORs := 3     
++---Registers : 
+	                8 Bit    Registers := 12    
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   7 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module AddRoundKey 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module InvSubBytes_rsbox_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module InvSubBytes 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module InvCipher 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               35 Bit    Registers := 1     
+	                8 Bit    Registers := 10    
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     35 Bit        Muxes := 1     
+	  36 Input     35 Bit        Muxes := 1     
+	   2 Input     34 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 14    
+Module Hex2LED 
+Detailed RTL Component Info : 
++---Muxes : 
+	  32 Input      8 Bit        Muxes := 1     
+Module SevenSeg_Top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+Module UART_TX 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+Module UART_RX 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 5     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module UART 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module uart_wrapper 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/state_addr_1_reg_721_reg[3:2]' into 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/tmp_reg_710_reg[3:2]' [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvMixColumns.v:233]
+INFO: [Synth 8-4471] merging register 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/state_addr_3_reg_731_reg[3:2]' into 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/state_addr_2_reg_726_reg[3:2]' [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvMixColumns.v:215]
+INFO: [Synth 8-4471] merging register 'AESL_inst_Cipher/grp_AddRoundKey_fu_179/shl_ln_reg_199_reg[1:0]' into 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/tmp_reg_710_reg[1:0]' [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/AddRoundKey.v:237]
+INFO: [Synth 8-4471] merging register 'AESL_inst_Cipher/zext_ln451_reg_332_reg[5:4]' into 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/tmp_reg_710_reg[1:0]' [C:/Users/lisha/Desktop/HS/HW/LAB1/hls_de/test_DE/solution1/syn/verilog/InvCipher.v:768]
+WARNING: [Synth 8-3917] design apatb_Cipher_top has port UART_CTS driven by constant 0
+WARNING: [Synth 8-3331] design AESL_automem_state__parameterized0 has unconnected port ready
+WARNING: [Synth 8-3331] design AESL_automem_state__parameterized0 has unconnected port done
+WARNING: [Synth 8-3331] design AESL_automem_RoundKey has unconnected port ready
+WARNING: [Synth 8-3331] design AESL_automem_RoundKey has unconnected port done
+WARNING: [Synth 8-3331] design AESL_automem_state has unconnected port ready
+WARNING: [Synth 8-3331] design AESL_automem_state has unconnected port done
+WARNING: [Synth 8-3331] design control_unit has unconnected port O_LED[15]
+WARNING: [Synth 8-3331] design control_unit has unconnected port O_LED[14]
+WARNING: [Synth 8-3331] design control_unit has unconnected port O_LED[13]
+WARNING: [Synth 8-3331] design control_unit has unconnected port O_LED[12]
+WARNING: [Synth 8-3331] design control_unit has unconnected port O_LED[11]
+WARNING: [Synth 8-3331] design control_unit has unconnected port O_LED[10]
+WARNING: [Synth 8-3331] design control_unit has unconnected port O_LED[9]
+WARNING: [Synth 8-3331] design control_unit has unconnected port O_LED[8]
+WARNING: [Synth 8-3331] design control_unit has unconnected port O_LED[7]
+WARNING: [Synth 8-3331] design control_unit has unconnected port O_LED[6]
+WARNING: [Synth 8-3331] design control_unit has unconnected port O_LED[5]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[15]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[14]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[13]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[12]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[11]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[10]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[9]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[8]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[7]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[6]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[5]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[4]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[3]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[2]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_SW[0]
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_AP_IDLE
+WARNING: [Synth 8-3331] design control_unit has unconnected port I_AP_READY
+WARNING: [Synth 8-3331] design apatb_Cipher_top has unconnected port UART_RTS
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_2_reg_754_reg[0]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/a_reg_736_reg[6]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_2_reg_754_reg[1]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_reg_760_reg[2]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_2_reg_754_reg[2]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_1_reg_748_reg[1]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_2_reg_754_reg[4]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_reg_760_reg[5]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_2_reg_754_reg[5]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_1_reg_748_reg[4]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_2_reg_754_reg[6]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/a_reg_736_reg[4]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_2_reg_754_reg[7]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/a_reg_736_reg[5]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_1_reg_748_reg[0]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/a_reg_736_reg[7]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_5_reg_774_reg[0]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/b_reg_742_reg[6]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_4_reg_768_reg[0]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/b_reg_742_reg[7]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_3_reg_780_reg[0]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_5_reg_774_reg[7]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_reg_760_reg[0]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/a_reg_736_reg[5]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/b_reg_742_reg[1]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_4_reg_768_reg[2]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_5_reg_774_reg[1]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_3_reg_780_reg[2]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_4_reg_768_reg[1]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_5_reg_774_reg[2]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/a_reg_736_reg[1]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_1_reg_748_reg[2]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_1_reg_748_reg[4]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_reg_760_reg[6]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/b_reg_742_reg[4]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_5_reg_774_reg[6]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_5_reg_774_reg[4]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_3_reg_780_reg[5]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_4_reg_768_reg[4]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_5_reg_774_reg[5]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/a_reg_736_reg[4]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_1_reg_748_reg[5]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_1_reg_748_reg[5]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_reg_760_reg[7]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/b_reg_742_reg[5]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_5_reg_774_reg[7]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_5_reg_774_reg[5]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_3_reg_780_reg[6]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_4_reg_768_reg[5]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_5_reg_774_reg[6]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/a_reg_736_reg[5]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_1_reg_748_reg[6]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/b_reg_742_reg[6]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_4_reg_768_reg[7]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_5_reg_774_reg[6]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_3_reg_780_reg[7]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_4_reg_768_reg[6]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_5_reg_774_reg[7]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/a_reg_736_reg[6]' (FDE) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/xor_ln302_1_reg_748_reg[7]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_AddRoundKey_fu_179/zext_ln248_reg_204_reg[3]' (FDE) to 'AESL_inst_Cipher/grp_AddRoundKey_fu_179/shl_ln_reg_199_reg[3]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvSubBytes_fu_190/zext_ln374_reg_132_reg[5]' (FD) to 'AESL_inst_Cipher/grp_InvSubBytes_fu_190/zext_ln374_reg_132_reg[3]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvSubBytes_fu_190/zext_ln374_reg_132_reg[4]' (FD) to 'AESL_inst_Cipher/grp_InvSubBytes_fu_190/zext_ln374_reg_132_reg[3]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvSubBytes_fu_190/zext_ln374_reg_132_reg[3]' (FD) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/state_addr_1_reg_721_reg[1]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/state_addr_3_reg_731_reg[0]' (FD) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/state_addr_1_reg_721_reg[0]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/state_addr_1_reg_721_reg[0]' (FD) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/state_addr_2_reg_726_reg[1]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/state_addr_2_reg_726_reg[0]' (FD) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/state_addr_1_reg_721_reg[1]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/state_addr_3_reg_731_reg[1]' (FD) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/state_addr_2_reg_726_reg[1]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/state_addr_1_reg_721_reg[1]' (FD) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/tmp_reg_710_reg[0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\AESL_inst_Cipher/grp_InvMixColumns_fu_173/state_addr_2_reg_726_reg[1] )
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_AddRoundKey_fu_179/zext_ln248_reg_204_reg[0]' (FDR) to 'AESL_inst_Cipher/grp_AddRoundKey_fu_179/zext_ln248_reg_204_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\AESL_inst_Cipher/grp_AddRoundKey_fu_179/zext_ln248_reg_204_reg[1] )
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_AddRoundKey_fu_179/zext_ln248_reg_204_reg[2]' (FDE) to 'AESL_inst_Cipher/grp_AddRoundKey_fu_179/shl_ln_reg_199_reg[2]'
+INFO: [Synth 8-3886] merging instance 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/tmp_reg_710_reg[0]' (FD) to 'AESL_inst_Cipher/grp_InvMixColumns_fu_173/tmp_reg_710_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\AESL_inst_Cipher/grp_InvMixColumns_fu_173/tmp_reg_710_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_control_unit/\state_d_reg[3] )
+INFO: [Synth 8-3886] merging instance 'u_control_unit/mem0_add_d_reg[2]' (FDRE) to 'u_control_unit/mem1_add_d_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_control_unit/mem0_add_d_reg[3]' (FDRE) to 'u_control_unit/mem1_add_d_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_control_unit/mem0_add_d_reg[1]' (FDRE) to 'u_control_unit/mem1_add_d_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_control_unit/mem0_add_d_reg[0]' (FDRE) to 'u_control_unit/mem1_add_d_reg[0]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:05 . Memory (MB): peak = 1043.602 ; gain = 402.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-----------------+--------------------------------------------------------------------------------+---------------+----------------+
+|Module Name      | RTL Object                                                                     | Depth x Width | Implemented As | 
++-----------------+--------------------------------------------------------------------------------+---------------+----------------+
+|apatb_Cipher_top | AESL_inst_Cipher/grp_InvSubBytes_fu_190/rsbox_U/InvSubBytes_rsbox_rom_U/q0_reg | 256x8         | Block RAM      | 
++-----------------+--------------------------------------------------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance i_1_0/AESL_inst_Cipher/grp_InvSubBytes_fu_190/rsbox_U/InvSubBytes_rsbox_rom_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:09 ; elapsed = 00:01:18 . Memory (MB): peak = 1043.602 ; gain = 402.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:28 . Memory (MB): peak = 1117.301 ; gain = 475.805
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance AESL_inst_Cipher/grp_InvSubBytes_fu_190/rsbox_U/InvSubBytes_rsbox_rom_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:23 ; elapsed = 00:01:32 . Memory (MB): peak = 1141.336 ; gain = 499.840
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:26 ; elapsed = 00:01:36 . Memory (MB): peak = 1145.832 ; gain = 504.336
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:26 ; elapsed = 00:01:36 . Memory (MB): peak = 1145.832 ; gain = 504.336
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:27 ; elapsed = 00:01:36 . Memory (MB): peak = 1145.832 ; gain = 504.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:27 ; elapsed = 00:01:37 . Memory (MB): peak = 1145.832 ; gain = 504.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:27 ; elapsed = 00:01:37 . Memory (MB): peak = 1145.832 ; gain = 504.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:27 ; elapsed = 00:01:37 . Memory (MB): peak = 1145.832 ; gain = 504.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |     6|
+|3     |LUT1     |    11|
+|4     |LUT2     |    71|
+|5     |LUT3     |    72|
+|6     |LUT4     |   171|
+|7     |LUT5     |   332|
+|8     |LUT6     |   970|
+|9     |MUXF7    |   187|
+|10    |MUXF8    |    69|
+|11    |RAMB18E1 |     1|
+|12    |FDCE     |    28|
+|13    |FDRE     |  1927|
+|14    |FDSE     |    16|
+|15    |IBUF     |     9|
+|16    |OBUF     |    22|
+|17    |OBUFT    |    12|
++------+---------+------+
+
+Report Instance Areas: 
++------+--------------------------------+----------------------+------+
+|      |Instance                        |Module                |Cells |
++------+--------------------------------+----------------------+------+
+|1     |top                             |                      |  3905|
+|2     |  u_uart_wrapper                |uart_wrapper          |   122|
+|3     |    u_uart                      |UART                  |   103|
+|4     |      uart_rx_i                 |UART_RX               |    38|
+|5     |      uart_tx_i                 |UART_TX               |    44|
+|6     |  AESL_inst_Cipher              |InvCipher             |   740|
+|7     |    grp_AddRoundKey_fu_179      |AddRoundKey           |    64|
+|8     |    grp_InvMixColumns_fu_173    |InvMixColumns         |   330|
+|9     |    grp_InvSubBytes_fu_190      |InvSubBytes           |   111|
+|10    |      rsbox_U                   |InvSubBytes_rsbox     |    25|
+|11    |        InvSubBytes_rsbox_rom_U |InvSubBytes_rsbox_rom |    25|
+|12    |  u_SevenSeg_Top                |SevenSeg_Top          |    52|
+|13    |  u_control_unit                |control_unit          |  2946|
+|14    |    mem_inst_RoundKey           |AESL_automem_RoundKey |  2291|
+|15    |    mem_inst_state              |AESL_automem_state    |   439|
++------+--------------------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:27 ; elapsed = 00:01:37 . Memory (MB): peak = 1145.832 ; gain = 504.336
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 37 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:12 ; elapsed = 00:01:32 . Memory (MB): peak = 1145.832 ; gain = 351.336
+Synthesis Optimization Complete : Time (s): cpu = 00:01:27 ; elapsed = 00:01:37 . Memory (MB): peak = 1145.832 ; gain = 504.336
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 263 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1161.902 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+137 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:38 ; elapsed = 00:01:50 . Memory (MB): peak = 1161.902 ; gain = 781.828
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1161.902 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lisha/Desktop/HS/HW/LAB1/EL9453_Hardware_Security_and_Trust-master/EL9453_Hardware_Security_and_Trust-master/Lab1/aes_test.runs/synth_1/apatb_Cipher_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file apatb_Cipher_top_utilization_synth.rpt -pb apatb_Cipher_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 15 16:03:57 2020...

@@ -1,0 +1,69 @@
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2017.3/bin/unwrapped/lnx64.o/xelab -wto 0d9e3740f87e46658c948f3c30f7523e --incr --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_aes_top_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_aes_top xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "tb_aes_top_time_synth.sdf", for root module "tb_aes_top/u_aes_top".
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /tb_aes_top/u_aes_top/u_uart_wrapper/O_BUSY_INST_0 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /tb_aes_top/u_aes_top/u_uart_wrapper/counter_d[0]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /tb_aes_top/u_aes_top/u_uart_wrapper/counter_d[1]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /tb_aes_top/u_aes_top/u_uart_wrapper/counter_d_reg[0] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /tb_aes_top/u_aes_top/u_uart_wrapper/counter_d_reg[1] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /tb_aes_top/u_aes_top/u_uart_wrapper/state_d[0]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /tb_aes_top/u_aes_top/u_uart_wrapper/state_d[1]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /tb_aes_top/u_aes_top/u_uart_wrapper/state_d_reg[0] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /tb_aes_top/u_aes_top/u_uart_wrapper/state_d_reg[1] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /tb_aes_top/u_aes_top/u_uart_wrapper/tx_data_d_reg[0] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /tb_aes_top/u_aes_top/u_uart_wrapper/tx_data_d_reg[1] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /tb_aes_top/u_aes_top/u_uart_wrapper/tx_data_d_reg[2] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /tb_aes_top/u_aes_top/u_uart_wrapper/tx_data_d_reg[3] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /tb_aes_top/u_aes_top/u_uart_wrapper/tx_data_d_reg[4] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /tb_aes_top/u_aes_top/u_uart_wrapper/tx_data_d_reg[5] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /tb_aes_top/u_aes_top/u_uart_wrapper/tx_data_d_reg[6] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /tb_aes_top/u_aes_top/u_uart_wrapper/tx_data_d_reg[7] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /tb_aes_top/u_aes_top/u_uart_wrapper/tx_start_inferred_i_1 in the HDL hierarchy, annotation will be skipped.
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "tb_aes_top_time_synth.sdf", for root module "tb_aes_top/u_aes_top".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.FDSE_default
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.MUXF7
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.MUXF8
+Compiling module xil_defaultlib.AddRoundKey
+Compiling module simprims_ver.RB18_INTERNAL_VLOG(RDADDR_COLLIS...
+Compiling module simprims_ver.RAMB18E1(INIT_00=256'b0111011000...
+Compiling module xil_defaultlib.SubBytes_sbox_rom
+Compiling module xil_defaultlib.SubBytes_sbox
+Compiling module xil_defaultlib.SubBytes
+Compiling module xil_defaultlib.Cipher
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.OBUFT
+Compiling module simprims_ver.FDCE_default
+Compiling module xil_defaultlib.AESL_automem_RoundKey
+Compiling module simprims_ver.FDRE(INIT=1'b1)
+Compiling module xil_defaultlib.AESL_automem_state
+Compiling module simprims_ver.FDSE(INIT=1'b0)
+Compiling module simprims_ver.CARRY4
+Compiling module xil_defaultlib.SevenSeg_Top
+Compiling module xil_defaultlib.UART_RX
+Compiling module xil_defaultlib.UART_TX
+Compiling module xil_defaultlib.UART
+Compiling module xil_defaultlib.uart_wrapper
+Compiling module simprims_ver.SRL16E_default
+Compiling module xil_defaultlib.aes_top
+Compiling module xil_defaultlib.tb_aes_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_aes_top_time_synth

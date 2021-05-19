@@ -1,0 +1,33 @@
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2017.3/bin/unwrapped/lnx64.o/xelab -wto 0d9e3740f87e46658c948f3c30f7523e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_aes_top_behav xil_defaultlib.tb_aes_top xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port ce1 [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/sources_1/new/control_unit.v:578]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port ce1 [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/tiny-AES-c/aes_test/aes_test.srcs/sources_1/new/control_unit.v:599]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling module xil_defaultlib.AESL_automem_state(DATA_WIDTH=32...
+Compiling module xil_defaultlib.AESL_automem_RoundKey(DATA_WIDTH...
+Compiling module xil_defaultlib.control_unit(INPUT_SIZE=2,KEY_SI...
+Compiling module xil_defaultlib.RC5_ENCRYPT
+Compiling module xil_defaultlib.RC5_ENCRYPT_0
+Compiling architecture behavioral of entity xil_defaultlib.Hex2LED [hex2led_default]
+Compiling architecture behavioral of entity xil_defaultlib.SevenSeg_Top [sevenseg_top_default]
+Compiling architecture full of entity xil_defaultlib.UART_TX [\UART_TX(1,4)\]
+Compiling architecture full of entity xil_defaultlib.UART_RX [\UART_RX(1,4)\]
+Compiling architecture full of entity xil_defaultlib.UART [\UART(clk_freq=100000000)(1,4)\]
+Compiling module xil_defaultlib.uart_wrapper
+Compiling module xil_defaultlib.apatb_Cipher_top
+Compiling module xil_defaultlib.tb_aes_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_aes_top_behav
